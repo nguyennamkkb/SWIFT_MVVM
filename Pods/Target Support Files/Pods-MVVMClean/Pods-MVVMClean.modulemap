@@ -1,0 +1,6 @@
+framework module Pods_MVVMClean {
+  umbrella header "Pods-MVVMClean-umbrella.h"
+
+  export *
+  module * { export * }
+}
