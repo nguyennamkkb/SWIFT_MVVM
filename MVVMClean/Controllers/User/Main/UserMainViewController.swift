@@ -7,7 +7,7 @@
 
 import UIKit
 
-class UserMainViewController: UIViewController {
+class UserMainViewController: BaseViewController {
 
     var collectionView = UserUICollectionView()
     override func viewDidLoad() {
@@ -17,6 +17,7 @@ class UserMainViewController: UIViewController {
         navigationController?.navigationBar.prefersLargeTitles = true
         setupUI()
     }
+    
     func setupUI(){
         view.addSubview(collectionView)
         collectionView.snp.makeConstraints{

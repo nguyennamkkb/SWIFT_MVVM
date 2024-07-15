@@ -13,6 +13,11 @@
 		9A25FE5F2C456AB400480DB0 /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A25FE5E2C456AB400480DB0 /* App.swift */; };
 		9A25FE632C456BCD00480DB0 /* App.Key.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A25FE622C456BCD00480DB0 /* App.Key.swift */; };
 		9A25FE652C456BF600480DB0 /* App.Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A25FE642C456BF600480DB0 /* App.Text.swift */; };
+		9A25FE672C456D4D00480DB0 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A25FE662C456D4D00480DB0 /* NetworkManager.swift */; };
+		9A25FE692C456E8E00480DB0 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A25FE682C456E8E00480DB0 /* BaseViewController.swift */; };
+		9A25FE6B2C4570E200480DB0 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A25FE6A2C4570E200480DB0 /* APIManager.swift */; };
+		9A25FE6E2C45710B00480DB0 /* CharacterRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A25FE6D2C45710B00480DB0 /* CharacterRequest.swift */; };
+		9A25FE702C45728700480DB0 /* BaseResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A25FE6F2C45728700480DB0 /* BaseResponse.swift */; };
 		9A50072C2C3D8DF800DFD8DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A50072B2C3D8DF800DFD8DE /* AppDelegate.swift */; };
 		9A50072E2C3D8DF800DFD8DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A50072D2C3D8DF800DFD8DE /* SceneDelegate.swift */; };
 		9A5007302C3D8DF800DFD8DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9A50072F2C3D8DF800DFD8DE /* ViewController.swift */; };
@@ -35,6 +40,11 @@
 		9A25FE5E2C456AB400480DB0 /* App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
 		9A25FE622C456BCD00480DB0 /* App.Key.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.Key.swift; sourceTree = "<group>"; };
 		9A25FE642C456BF600480DB0 /* App.Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = App.Text.swift; sourceTree = "<group>"; };
+		9A25FE662C456D4D00480DB0 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		9A25FE682C456E8E00480DB0 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		9A25FE6A2C4570E200480DB0 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		9A25FE6D2C45710B00480DB0 /* CharacterRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRequest.swift; sourceTree = "<group>"; };
+		9A25FE6F2C45728700480DB0 /* BaseResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseResponse.swift; sourceTree = "<group>"; };
 		9A5007282C3D8DF800DFD8DE /* MVVMClean.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMClean.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A50072B2C3D8DF800DFD8DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9A50072D2C3D8DF800DFD8DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +124,8 @@
 		9A25FE572C4569DF00480DB0 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				9A25FE662C456D4D00480DB0 /* NetworkManager.swift */,
+				9A25FE6A2C4570E200480DB0 /* APIManager.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -121,6 +133,7 @@
 		9A25FE582C4569E800480DB0 /* Apis */ = {
 			isa = PBXGroup;
 			children = (
+				9A25FE6C2C4570F600480DB0 /* Character */,
 			);
 			path = Apis;
 			sourceTree = "<group>";
@@ -152,6 +165,7 @@
 		9A25FE5C2C456A1300480DB0 /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				9A25FE682C456E8E00480DB0 /* BaseViewController.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -161,6 +175,14 @@
 			children = (
 			);
 			path = "New Group";
+			sourceTree = "<group>";
+		};
+		9A25FE6C2C4570F600480DB0 /* Character */ = {
+			isa = PBXGroup;
+			children = (
+				9A25FE6D2C45710B00480DB0 /* CharacterRequest.swift */,
+			);
+			path = Character;
 			sourceTree = "<group>";
 		};
 		9A50071F2C3D8DF800DFD8DE = {
@@ -212,6 +234,7 @@
 			children = (
 				9A5007482C3D914500DFD8DE /* User.swift */,
 				9A25FE542C45694D00480DB0 /* Character.swift */,
+				9A25FE6F2C45728700480DB0 /* BaseResponse.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -442,13 +465,18 @@
 				9A646A7E2C41929B0092BC3B /* AlbumMainViewController.swift in Sources */,
 				9A646A862C41994B0092BC3B /* UserUICollectionView.swift in Sources */,
 				9A646A812C4192AC0092BC3B /* PostMainViewController.swift in Sources */,
+				9A25FE672C456D4D00480DB0 /* NetworkManager.swift in Sources */,
 				9A25FE632C456BCD00480DB0 /* App.Key.swift in Sources */,
 				9A25FE552C45694D00480DB0 /* Character.swift in Sources */,
+				9A25FE692C456E8E00480DB0 /* BaseViewController.swift in Sources */,
 				9A5007492C3D914500DFD8DE /* User.swift in Sources */,
 				9A5007302C3D8DF800DFD8DE /* ViewController.swift in Sources */,
 				9A646A7B2C41926A0092BC3B /* UserMainViewController.swift in Sources */,
 				9A50072C2C3D8DF800DFD8DE /* AppDelegate.swift in Sources */,
+				9A25FE6E2C45710B00480DB0 /* CharacterRequest.swift in Sources */,
+				9A25FE6B2C4570E200480DB0 /* APIManager.swift in Sources */,
 				9A646A712C4191AD0092BC3B /* TabbarViewController.swift in Sources */,
+				9A25FE702C45728700480DB0 /* BaseResponse.swift in Sources */,
 				9A50072E2C3D8DF800DFD8DE /* SceneDelegate.swift in Sources */,
 				9A646A882C419BF40092BC3B /* UserCollectionViewCell.swift in Sources */,
 				9A25FE652C456BF600480DB0 /* App.Text.swift in Sources */,

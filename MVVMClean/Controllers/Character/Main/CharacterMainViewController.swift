@@ -7,12 +7,13 @@
 
 import UIKit
 
-class CharacterMainViewController: UIViewController {
+class CharacterMainViewController: BaseViewController {
 
+    let characterRequest = CharacterRequest()
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        title = "Characters"
+       
     }
     
 }

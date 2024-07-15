@@ -8,6 +8,7 @@
 import Foundation
 
 struct App{
+    static let baseURL = "https://dattebayo-api.onrender.com"
     struct Key{}
     struct Font{}
     struct Screen{}

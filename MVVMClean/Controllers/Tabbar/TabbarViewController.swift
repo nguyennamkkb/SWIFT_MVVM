@@ -20,9 +20,14 @@ class TabbarViewController: UITabBarController {
         tabBar.backgroundColor = .white
     }
     func setupTabbarItem(){
-        let userViewController =  UserMainViewController()
-        let naviUserViewController = UINavigationController(rootViewController: userViewController)
-        naviUserViewController.tabBarItem = UITabBarItem(title: "User", image: UIImage(systemName: "person"), tag: 0)
+        
+        let characterViewController =  CharacterMainViewController()
+        let naviCharacterViewController = UINavigationController(rootViewController: characterViewController)
+        naviCharacterViewController.tabBarItem = UITabBarItem(title: "User", image: UIImage(systemName: "person"), tag: 0)
+        
+//        let userViewController =  UserMainViewController()
+//        let naviUserViewController = UINavigationController(rootViewController: userViewController)
+//        naviUserViewController.tabBarItem = UITabBarItem(title: "User", image: UIImage(systemName: "person"), tag: 0)
         
         let albumViewController = AlbumMainViewController()
         let naviAlbumViewController = UINavigationController(rootViewController: albumViewController)
@@ -32,7 +37,7 @@ class TabbarViewController: UITabBarController {
         let naviPostViewController = UINavigationController(rootViewController: postViewControlle)
         naviPostViewController.tabBarItem = UITabBarItem(title: "Post", image: UIImage(systemName: "note.text"), tag: 2)
         
-        viewControllers = [naviUserViewController, naviAlbumViewController, naviPostViewController]
+        viewControllers = [naviCharacterViewController, naviAlbumViewController, naviPostViewController]
     }
     
 }
