@@ -34,12 +34,14 @@ class UserCollectionViewCell: UICollectionViewCell {
         
         nameLabel = {
             let subject = UILabel()
+            subject.textColor = .white
             subject.translatesAutoresizingMaskIntoConstraints = false
             subject.font = UIFont.systemFont(ofSize: 20,weight: .bold)
             return subject
         }()
         addresslabel = {
             let subject = UILabel()
+            subject.textColor = .white
             subject.translatesAutoresizingMaskIntoConstraints = false
             subject.font = UIFont.systemFont(ofSize: 16)
             return subject
@@ -53,7 +55,6 @@ class UserCollectionViewCell: UICollectionViewCell {
             make.bottom.equalToSuperview()
             make.left.equalToSuperview().offset(16)
             make.right.equalToSuperview().inset(16)
-            make.height.equalTo(48)
         }
         
         itemView.addSubview(nameLabel)

@@ -13,7 +13,7 @@ class UserMainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        title = "User"
+        title = "Users"
         navigationController?.navigationBar.prefersLargeTitles = true
         setupUI()
     }
